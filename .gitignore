@@ -1,0 +1,4 @@
+*.o
+*.swp
+bam_to_clusters
+.*
