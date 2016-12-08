@@ -8,6 +8,7 @@ The output is a tab-separated table with 5 columns:
 ```
 chrName start stop strand height
 ```
+Coordinates are 1-based.
 
 The implementation is based on [stranded-coverage](https://github.com/pmenzel/stranded-coverage).
 
