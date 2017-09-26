@@ -1,5 +1,18 @@
-/* strand_cov.c - Peter Menzel, 2016 */
-// test -n between old and new
+ /*************************************************
+   bam_to_clusters
+
+   Author: Peter Menzel <pmenzel@gmail.com>
+
+   Copyright (C) 2016,2017 Peter Menzel
+
+   See the file README.md for documentation.
+
+   See the file LICENSE for the license to redistribute.
+
+ **************************************************/
+
+
+
 #include "htslib/hfile.h"
 #include "htslib/sam.h"
 #include "htslib/bgzf.h"

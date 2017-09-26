@@ -6,7 +6,7 @@ OPTS = -Wall -Wextra -O2 -g -std=c99
 
 .SUFFIXES: .c .o
 
-.c.o: Makefile
+%.o : %.c Makefile
 	$(CC) -c $(OPTS) $(INCLUDES) $< -o $@
 
 all: bam_to_clusters
@@ -15,7 +15,7 @@ htslib:
 	$(MAKE) -j -C ../htslib
 
 bam_to_clusters: htslib bam_to_clusters.o
-	$(CC) $(OPTS) $(INCLUDES) -o bam_to_clusters bam_to_clusters.o ../htslib/libhts.a -lz -lpthread
+	$(CC) -o bam_to_clusters bam_to_clusters.o ../htslib/libhts.a -lz -lpthread
 
 clean:
 	rm -f *.o bam_to_clusters
