@@ -1,5 +1,5 @@
-bam_to_clusters
-===============
+# bam_to_clusters
+
 
 This program reads coordinate-sorted files with strand-specific single-end or paired-end RNA-Seq reads
 and prints clusters of mapped reads having a minimum depth and distance to other clusters.
@@ -51,7 +51,7 @@ alignment will be counted as `1/N`.
 ### RPM Normalisation
 The option `-n` enables normalisation of the coverage using the reads per million mapped reads (RPM).
 
-###License
+### License
 
 See the file LICENSE.
 
